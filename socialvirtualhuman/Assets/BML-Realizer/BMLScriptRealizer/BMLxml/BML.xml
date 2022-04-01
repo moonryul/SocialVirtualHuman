@@ -1,0 +1,27 @@
+<xml>
+	<bml id="bml1" characterId="Sara">
+
+    <speech id="speech1" start="0">
+      <text>Hello, my name is Sara.</text>
+    </speech>
+    
+    <gesture id="gesture1" lexeme="gesture" start="0"/>
+
+    <gaze id="gaze1" target="Cube" start="4" end="6"/>
+		<gaze id="gaze2" target="Sphere" start="gaze1:end+1" end="gaze2:start+3"/>		
+		<gaze id="gaze3" target="Capsule" start="gaze2:end+1" end="gaze3:start+3"/>		
+		
+		<speech id="speech2" start="gaze1:start+1">
+			<text>I can look at cube</text>
+		</speech>
+
+    <speech id="speech3" start="gaze2:start+1">
+      <text>green sphere</text>
+    </speech>
+
+    <speech id="speech4" start="gaze3:start+1">
+      <text>or a blue capsule</text>
+    </speech>
+
+  </bml>
+</xml>
